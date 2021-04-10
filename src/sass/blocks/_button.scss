@@ -1,0 +1,9 @@
+.btn {
+	width: 160px;
+	height: 45px;
+	background-color: $btn-color;
+	&_big {
+		width: 230px;
+		height: 57px;
+	}
+}

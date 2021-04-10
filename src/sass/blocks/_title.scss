@@ -1,2 +1,28 @@
-$main-color:	#6d33ff;;
-$second-color:	#6d33ff;
+.title {
+	// font-family: Roboto;
+	font-size: 26px;
+	line-height: 23px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #2e2e2e;
+	&_fz24 {
+		font-size: 24px;
+		line-height: 1.2;
+		font-weight: 300;
+		color: #ffffff;
+	}
+	&_fz72 {
+		font-size: 72px;
+		line-height: 1.2;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #ec644b;
+	}
+	&_fz42 {
+		font-size: 42px;
+		line-height: 1.2;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
+}
