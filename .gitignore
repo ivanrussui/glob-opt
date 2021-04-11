@@ -6,6 +6,10 @@
 # заметь в файле инфо, важные замечанию по проекту
 info.txt
 
+# шрифты
+Roboto.zip
+RobotoCondensed.zip
+
 # phpmailer чтобы с твоими данными почты не уходил на гитхаб
 /src/mailer
 /dist/mailer
