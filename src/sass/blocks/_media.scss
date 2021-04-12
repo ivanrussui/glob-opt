@@ -2,6 +2,32 @@
 	.container {
 		max-width: 960px;
 	}
+	.navbar {
+		position: relative;
+		&__menu {
+			display: none;
+		}
+	}
+	.hamburger {
+		display: block;
+		// background-color: $main-color;
+		width: 55px;
+		// height: 25px;
+		position: absolute;
+		left: 120px;
+		cursor: pointer;
+		&:hover span {
+			background: $hover-color;
+			transition: all .5s;
+		}
+		span {
+			display: block;
+			height: 5px;
+			width: 100%;
+			margin-bottom: 5px;
+			background-color: $main-color;
+		}
+	}
 }
 
 @media (max-width: 992px) {
