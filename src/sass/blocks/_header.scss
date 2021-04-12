@@ -88,6 +88,11 @@
 		font-size: 15px;
 		line-height: 16px;
 		font-weight: 400;
+		&:hover {
+			color: $main-color;
+			text-decoration: underline;
+			transition: .5s;
+		}
 	}
 	&__info {
 		display: flex;
