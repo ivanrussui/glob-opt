@@ -7,9 +7,10 @@ const hamburger = document.querySelector('.hamburger'),
 
 hamburger.addEventListener('click', () => {
 	menu.classList.add('active');
-	// menuClose.classList.add('active');
+	bodyLock.classList.add('lock');
 });
 
 menuClose.addEventListener('click', () => {
 	menu.classList.remove('active');
+	bodyLock.classList.remove('lock');
 });
