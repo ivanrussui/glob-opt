@@ -3,70 +3,11 @@
 		max-width: 960px;
 	}
 	.navbar {
-		// position: relative;
 		&__menu {
 			display: none;
 		}
-
-		// &__menu {
-		// 	position: fixed;
-		// 	top: -100%;
-		// 	left: 0;
-		// 	width: 100%;
-		// 	height: 100vh;
-		// 	z-index: 10;
-		// 	visibility: hidden;
-		// 	opacity: 0;
-		// 	transition: all 0.7s;
-		// 	&.active {
-		// 		top: 0px;
-		// 		// text-align: center;
-		// 		// left: 50%;
-		// 		// transform: translateX(-50%);
-		// 		visibility: visible;
-		// 		opacity: .97;
-		// 		background-color: $title-color;
-		// 		// display: flex;
-		// 		// flex-wrap: wrap;
-		// 		// flex-direction: row;
-		// 		padding: 50px;
-		// 	}
-		// 	&__close {
-		// 		position: fixed;
-		// 		top: -100%;
-		// 		left: 0;
-		// 		width: 100%;
-		// 		height: 100vh;
-		// 		z-index: 10;
-		// 		visibility: hidden;
-		// 		opacity: 0;
-		// 		transition: all 0.7s;
-		// 		&.active {
-		// 			top: 0px;
-		// 			// text-align: center;
-		// 			// left: 50%;
-		// 			// transform: translateX(-50%);
-		// 			visibility: visible;
-		// 			opacity: .97;
-		// 			background-color: $title-color;
-		// 			// display: flex;
-		// 			// flex-wrap: wrap;
-		// 			// flex-direction: row;
-		// 			padding: 50px;
-		// 		}
-		// 	}
-		// }
-		// &__logo {
-		// 	order: 2;
-		// 	position: relative;
-		// 	left: -180px;
-		// }
-		// &__info {
-		// 	order: 3;
-		// }
 	}
 	.hamburger {
-		// order: 1;
 		display: block;
 		width: 55px;
 		position: absolute;
@@ -83,24 +24,6 @@
 			margin-bottom: 5px;
 			background-color: $main-color;
 		}
-		// &__close {
-		// 	display: none;
-		// 	width: 55px;
-		// 	position: absolute;
-		// 	left: 120px;
-		// 	cursor: pointer;
-		// 	&:hover span {
-		// 		background: $hover-color;
-		// 		transition: all .5s;
-		// 	}
-		// span {
-		// 	display: block;
-		// 	height: 5px;
-		// 	width: 100%;
-		// 	margin-bottom: 5px;
-		// 	background-color: $main-color;
-		// }
-		// }
 	}
 	.menu {
 		position: fixed;
@@ -114,26 +37,17 @@
 		transition: all 0.7s;
 	}
 	&.active {
-		// position: relative;
 		top: 0px;
 		visibility: visible;
 		opacity: 0.97;
 		background-color: $title-color;
-		// max-width: 100%;
 		display: flex;
 		justify-content: space-between;
-		// flex-wrap: wrap;
-		// flex-direction: row;
-		// padding-left: 60px;
-		// transform: translate(-60px, 60px);
-		// padding: 50px;
-		// padding-top: 60px;
 	}
 	.navbar{
 		&__menu {
 			padding: 60px 0 0 30px;
 			display: flex;
-			// flex-direction: column;
 		}
 		&__item {
 			margin-bottom: 10px;
@@ -143,15 +57,12 @@
 		}
 	}
 	.menu__close {
-		// padding: 20px 20px 0 0;
 		display: block;
 		position: relative;
 		right: 20px;
 		top: 45px;
 		width: 40px;
 		height: 40px;
-		// margin-bottom: 20px;
-		// background-color: $main-color;
 		cursor: pointer;
 		&:hover span {
 			background: $hover-color;
@@ -176,6 +87,15 @@
 			grid-template-columns: repeat(2, 260px);
 			justify-content: space-around;
 			row-gap: 15px;
+		}
+	}
+	.advantages {
+		&__blocks {
+			grid-template-columns: repeat(2, minmax(400px, auto)) ;
+			gap: 30px 40px;
+		}
+		&__block {
+			grid-template-columns: 60px auto;
 		}
 	}
 }
@@ -216,6 +136,11 @@
 		&__close {
 			top: 17px;
 			right: 30px;
+		}
+	}
+	.advantages {
+		&__blocks {
+			grid-template-columns: 1fr;
 		}
 	}
 }
@@ -292,24 +217,24 @@
 	}
 	.navbar {
 		// &__info {
-			// display: none;
-			// visibility: hidden;
+		// 	// display: none;
+		// 	// visibility: hidden;
 		// }
 		&__btn {
 			display: none;
 		}
 		// &__text {
-			// display: none;
+		// 	// display: none;
 		// }
-		// &__contacts {
+		&__contacts {
 			// display: none;
-			// margin-right: 0;
-			// position: relative;
-			// top: 20px;
-		// }
+			margin-right: 0;
+			position: relative;
+			top: 20px;
+		}
 		// &__phone {
-			// position: relative;
-			// top: 20px;
+		// 	position: relative;
+		// 	top: 20px;
 		// }
 		// &__logo {
 		// 	position: relative;
@@ -317,9 +242,8 @@
 		// }
 	}
 	.hamburger {
-		// left: 0;
-		right: 10px;
-		// z-index: 1;
+		left: auto;
+		right: 0;
 		top: 4px;
 	}
 	.header {
@@ -341,14 +265,23 @@
 		&_fz24 {
 			font-size: 19px;
 		}
+		&_fz26 {
+			font-size: 22px;
+		}
 		&_fz72 {
 			font-size: 35px;
 		}
 	}
+	.advantages {
+		&__chapter {
+			line-height: 19px;
+		}
+		&__blocks {
+			row-gap: 25px;
+		}
+		&__block {
+			column-gap: 5px;
+		}
+	}
 }
-// @media (max-width: 466px) {
-// 	.hamburger {
-// 		left: 240px;
-// 	}
-	
-// }
+

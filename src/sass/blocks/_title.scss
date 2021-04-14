@@ -11,13 +11,20 @@
 		color: #ffffff;
 		margin: 9px 0 0;
 	}
+	&_fz26 {
+		font-size: 26px;
+		line-height: 23px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 0 0 30px;
+	}
 	&_fz72 {
 		font-family: Roboto Condensed;
 		font-size: 72px;
 		line-height: 1.2;
 		font-weight: 700;
 		text-transform: uppercase;
-		color: #ec644b;
+		color: $main-color;
 		margin: 26px 0 9px;
 	}
 	&_fz42 {

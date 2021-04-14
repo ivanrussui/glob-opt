@@ -14,9 +14,11 @@ body.lock {
 	overflow: hidden;
 }
 
+
 @import 'blocks/title';
 @import 'blocks/button';
 @import 'blocks/header';
-
+@import 'blocks/advantages';
+@import 'blocks/job';
 
 @import 'blocks/media';

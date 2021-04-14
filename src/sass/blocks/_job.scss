@@ -1,0 +1,9 @@
+.job {
+	padding: 50px 0;
+	&__title {
+		margin: 0;
+	}
+}
+.divider {
+	@include divider
+}

@@ -1,0 +1,30 @@
+.advantages {
+	padding: 50px 0 50px;
+	background-color: #f3f3f3;
+	min-height: 510px;
+	&__blocks {
+		margin-top: 30px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 35px 60px;
+	}
+	&__block {
+		display: grid;
+		grid-template-columns: 60px minmax(400px, auto);
+		column-gap: 20px;
+	}
+	&__chapter {
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: 700;
+		color: $main-color;
+		margin: 0 0 4px;
+	}
+	&__descr {
+		font-size: 14px;
+		font-weight: 300;
+		color: #3a3a3a;
+		line-height: 20px;
+		margin: 0;
+	}
+}
