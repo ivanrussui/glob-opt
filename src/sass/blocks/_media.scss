@@ -98,6 +98,14 @@
 			grid-template-columns: 60px auto;
 		}
 	}
+	.job {
+		&__block {
+			&:last-child {
+				position: relative;
+				left: 50%;
+			}
+		}
+	}
 }
 
 @media (max-width: 992px) {
@@ -142,12 +150,50 @@
 		&__blocks {
 			grid-template-columns: 1fr;
 		}
+		// ниже у .advantages добавил стили чтобы сделать иконки не сбоку а сверху
+		&__block {
+			grid-template-columns: 1fr;
+			// grid-template-rows: repeat(2, 100px);
+		}
+		&__img {
+			margin: 0 auto;
+		}
+		&__text {
+			text-align: center;
+		}
+	}
+	.job {
+		&__blocks {
+			grid-template-columns: 1fr;
+		}
+		&__block {
+			&:last-child {
+				left: 0;
+			}
+		}
+		&__img {
+			img {
+				display: block;
+				margin: 0 auto;
+				// max-width: 80%;
+			}
+		}
 	}
 }
 
 @media (max-width: 768px) {
 	.container {
 		max-width: 540px;
+	}
+	.title {
+		&_fz72{
+			font-size: 48px;
+			// margin-top: 20px;
+		}
+		&_fz42{
+			// font-size: 48px;
+			display: none;
+		}
 	}
 	.btn {
 		width: 135px;
@@ -189,16 +235,6 @@
 			font-size: 17px;
 		}
 	}
-	.title {
-		&_fz72{
-			font-size: 48px;
-			// margin-top: 20px;
-		}
-		&_fz42{
-			// font-size: 48px;
-			display: none;
-		}
-	}
 	.header {
 		&__stripes {
 			&::after, &::before {
@@ -214,6 +250,23 @@
 		padding: 0 10px;
 		// padding-right: 5px;
 		// padding-left: 5px;
+	}
+	.divider {
+		display: none;
+	}
+	.title {
+		&_fz21 {
+			display: none;
+		}
+		&_fz24 {
+			font-size: 19px;
+		}
+		&_fz26 {
+			font-size: 22px;
+		}
+		&_fz72 {
+			font-size: 35px;
+		}
 	}
 	.navbar {
 		// &__info {
@@ -261,26 +314,32 @@
 			}
 		}
 	}
-	.title {
-		&_fz24 {
-			font-size: 19px;
-		}
-		&_fz26 {
-			font-size: 22px;
-		}
-		&_fz72 {
-			font-size: 35px;
-		}
-	}
+
 	.advantages {
-		&__chapter {
-			line-height: 19px;
-		}
+		// &__chapter {
+		// 	line-height: 19px;
+		// }
 		&__blocks {
 			row-gap: 25px;
 		}
-		&__block {
-			column-gap: 5px;
+		// &__block {
+		// 	column-gap: 5px;
+		// }
+	}
+	.job {
+		&__blocks {
+			margin-top: 25px;
+			row-gap: 25px;
+		}
+		&__img {
+			img {
+				// display: block;
+				// margin: 0 auto;
+				max-width: 90%;
+			}
+		}
+		&__chapter {
+			margin: 10px 0 5px;
 		}
 	}
 }

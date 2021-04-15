@@ -1,9 +1,43 @@
 .job {
 	padding: 50px 0;
 	&__title {
-		margin: 0;
+	margin: 0;
 	}
+	&__subtitle {
+		max-width: 892px;
+		margin: 0 auto;
+	}
+	&__blocks {
+		margin-top: 37px;
+		display: grid;
+		// grid-template-columns: repeat(3, 1fr);
+		// grid-template-columns: repeat(3, auto);
+		grid-template-columns: repeat(auto-fit, 360px);
+		// grid-template-rows: 360px;
+		// grid-auto-rows: 1fr;
+		justify-content: center;
+		gap: 30px;
+		// grid-auto-rows: auto;
+	}
+
+	&__chapter {
+		text-align: center;
+		margin-bottom: 10px;
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 700;
+		color: $main-color;
+	}
+	&__descr {
+		text-align: justify;
+		margin: 0;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 20px;
+	}
+
+
 }
 .divider {
-	@include divider
+	@include divider;
 }
