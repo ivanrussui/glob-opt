@@ -11,30 +11,20 @@
 	border: none;
 	cursor: pointer;
 	position: relative;
-	// display: inline-block;
 	z-index: 1;
 	&:hover {
 		&:after {
-			// left: 100%;
 			height: 100%;
 			width: 100%;
-			// color: white;
-			// width: 160px;
-			// height: 45px;
 		}
 	}
 	&:after {
 		content: '';
 		position: absolute;
 		z-index: -1;
-		// color: white;
-		// top: 0;
 		bottom: 0px;
 		left: 0;
 		width: 0;
-		// width: 0;
-		// height: 0;
-		// height: 100%;
 		background-color: $hover-color;
 		display: block;
 		transition: 0.5s;
@@ -45,28 +35,6 @@
 	&:focus {
 		outline: none;
 	}
-
-
-		// &:hover {
-	// 	background-color: $btn-hover;
-	// 	width: 124px;
-	// 	font-size: 8px;
-	// }
-	// &:hover {
-	// 	&:after {
-	// 		// left: 100%;
-	// 		// width: 100px;
-	// 		// left: 100px;
-	// 		// height: 100%;
-	// 		width: 100%;
-	// 	}
-	// }
-
-	// &:hover {
-	// 	transform: .5s all;
-	// 	animation: btn-hov 2s 1;
-	// 	// background-color: $btn-hover;
-	// }
 
 	&_big {
 		width: 230px;

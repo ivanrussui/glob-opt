@@ -1,0 +1,22 @@
+.agent {
+	padding: 58px 0 75px;
+	background: url('../img/agent/bg.jpg') no-repeat center center / cover;
+	&__img {
+		border: 1px solid #ffffff;
+		border-radius: 50%;
+		max-width: 102px;
+		max-height: 102px;
+		margin: 0 auto;
+		img {
+			padding: 21px 27px 30px;
+		}
+	}
+	&__title {
+		color: #ffffff;
+		text-transform: inherit;
+		margin: 20px 0 22px;
+	}
+	&__subtitle {
+		max-width: 1000px;
+	}
+}
