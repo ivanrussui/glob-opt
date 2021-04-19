@@ -30,14 +30,14 @@
 	&__img {
 		margin: 14px 0 12px;
 		// background: url('../img/price/1.png') no-repeat center center / cover;
-		img {
-			
-			display: block;
-			margin: 0 auto;
-			// &:hover {
-			// 	background: url('../img/price/11.png') no-repeat center center / cover;
-			// }
-		}
+		// img {
+
+		// 	display: block;
+		// 	margin: 0 auto;
+		// 	// &:hover {
+		// 	// 	background: url('../img/price/11.png') no-repeat center center / cover;
+		// 	// }
+		// }
 	}
 	&__day {
 		margin: 0;
@@ -65,4 +65,12 @@
 	// &__blocks .btn {
 	// 	margin-bottom: 25px;
 	// }
+}
+.img_origin {
+	display: block;
+	margin: 0 auto;
+}
+.img_hover {
+	display: none;
+	margin: 0 auto;
 }
