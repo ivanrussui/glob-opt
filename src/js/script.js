@@ -16,23 +16,12 @@ menuClose.addEventListener('click', () => {
 });
 
 // img hover
-let priceBlock = document.querySelectorAll('.price__block'),
-	// menuLink = document.querySelectorAll('.menu__link > a'),
-	imgOrigin = document.querySelector('.img_origin'),
-	imgHover = document.querySelector('.img_hover'),
-	priceImg = document.querySelectorAll('.price__img');
-	
+// let priceBlock = document.querySelector('.price__block'),
+//   imgOrigin = document.querySelector('.price__img_origin'),
+//   imgHover = document.querySelector('.price__img_hover'),
+//   priceImg = document.querySelectorAll('.price__img');
 
-console.log(priceBlock);
-
-
-
-for (let i = 0; i < priceBlock.length; i++) {
-	priceBlock[i].addEventListener('mouseenter', function () {
-			imgOrigin.style.display = 'none';
-			imgHover.style.display = 'block';
-  });
-}
+// console.log(priceBlock);
 
 // for (let i = 0; i < priceBlock.length; i++) {
 // 	priceBlock[i].addEventListener('mouseenter', function () {
@@ -40,24 +29,25 @@ for (let i = 0; i < priceBlock.length; i++) {
 // 		imgHover.style.display = 'block';
 //   });
 // }
+
 // for (let i = 0; i < priceBlock.length; i++) {
 //   priceBlock[i].addEventListener('mouseleave', function () {
 // 		imgOrigin.style.display = 'block';
 // 		imgHover.style.display = 'none';
 //   });
 // }
-for (let i = 0; i < priceBlock.length; i++) {
-	priceBlock[i].addEventListener('mouseenter', function () {
-		imgOrigin.style.display = 'none';
-		imgHover.style.display = 'block';
-  });
-}
-for (let i = 0; i < priceBlock.length; i++) {
-  priceBlock[i].addEventListener('mouseleave', function () {
-		imgOrigin.style.display = 'block';
-		imgHover.style.display = 'none';
-  });
-}
+// for (let i = 0; i < priceBlock.length; i++) {
+//   priceBlock[i].addEventListener('mouseenter', function () {
+//     imgOrigin.style.display = 'none';
+//     imgHover.style.display = 'block';
+//   });
+// }
+// for (let i = 0; i < priceBlock.length; i++) {
+//   priceBlock[i].addEventListener('mouseleave', function () {
+//     imgOrigin.style.display = 'block';
+//     imgHover.style.display = 'none';
+//   });
+// }
 
 // priceBlock.addEventListener('mouseenter', () => {
 // 	imgOrigin.style.display = 'none';
@@ -67,4 +57,3 @@ for (let i = 0; i < priceBlock.length; i++) {
 // 	imgOrigin.style.display = 'block';
 // 	imgHover.style.display = 'none';
 // });
-

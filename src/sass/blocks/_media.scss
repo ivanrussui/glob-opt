@@ -44,7 +44,7 @@
 		display: flex;
 		justify-content: space-between;
 	}
-	.navbar{
+	.navbar {
 		&__menu {
 			padding: 60px 0 0 30px;
 			display: flex;
@@ -91,7 +91,7 @@
 	}
 	.advantages {
 		&__blocks {
-			grid-template-columns: repeat(2, minmax(400px, auto)) ;
+			grid-template-columns: repeat(2, minmax(400px, auto));
 			gap: 30px 40px;
 		}
 		&__block {
@@ -108,7 +108,7 @@
 	}
 	.price {
 		&__blocks {
-			grid-template-columns: repeat(2, minmax(265px,auto));
+			grid-template-columns: repeat(2, minmax(265px, auto));
 			justify-content: space-evenly;
 		}
 	}
@@ -192,11 +192,11 @@
 		max-width: 540px;
 	}
 	.title {
-		&_fz72{
+		&_fz72 {
 			font-size: 48px;
 			// margin-top: 20px;
 		}
-		&_fz42{
+		&_fz42 {
 			// font-size: 48px;
 			display: none;
 		}
@@ -234,7 +234,7 @@
 				text-decoration: none;
 			}
 		}
-		&__logo img{
+		&__logo img {
 			width: 85%;
 		}
 		&__phone {
@@ -243,7 +243,8 @@
 	}
 	.header {
 		&__stripes {
-			&::after, &::before {
+			&::after,
+			&::before {
 				width: 250px;
 			}
 		}
@@ -256,6 +257,14 @@
 		&__block {
 			&:hover {
 				box-shadow: none;
+				.price__img {
+					&_origin {
+						display: block;
+					}
+					&_hover {
+						display: none;
+					}
+				}
 			}
 		}
 	}
@@ -321,12 +330,13 @@
 			grid-template-columns: 1fr;
 		}
 		&__icon {
-			&:nth-child(2){
+			&:nth-child(2) {
 				margin-top: 0;
 			}
 		}
 		&__stripes {
-			&::after, &::before {
+			&::after,
+			&::before {
 				width: 130px;
 			}
 		}
@@ -367,4 +377,3 @@
 		}
 	}
 }
-
