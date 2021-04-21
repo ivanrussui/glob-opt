@@ -185,6 +185,17 @@
 			}
 		}
 	}
+	.consultation {
+		&__input {
+			grid-template-columns: 270px;
+			// grid-template-rows: repeat(3, 50px);
+			margin: 70px 0 50px;
+			row-gap: 10px;
+			input {
+				margin: 0;
+			}
+		}
+	}
 }
 
 @media (max-width: 768px) {
@@ -211,6 +222,9 @@
 		}
 		&_big {
 			width: 230px;
+		}
+		&_medium {
+			width: 180px;
 		}
 	}
 	.hamburger {
@@ -257,6 +271,7 @@
 		&__block {
 			&:hover {
 				box-shadow: none;
+				background-color: #fff;
 				.price__img {
 					&_origin {
 						display: block;
@@ -374,6 +389,18 @@
 		&__subtitle {
 			font-size: 16px;
 			line-height: 23px;
+		}
+	}
+	.consultation {
+		padding-bottom: 75px;
+		&__input {
+			grid-template-columns: 240px;
+			input {
+				width: 210px;
+			}
+		}
+		&__title {
+			font-size: 24px;
 		}
 	}
 }

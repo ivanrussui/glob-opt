@@ -8,6 +8,7 @@
 .container {
 	width: 1140px;
 	margin: 0 auto;
+	position: relative;
 }
 
 body.lock {
@@ -22,5 +23,7 @@ body.lock {
 @import 'blocks/job';
 @import 'blocks/agent';
 @import 'blocks/price';
+@import 'blocks/consultation';
+// @import 'blocks/form';
 
 @import 'blocks/media';
