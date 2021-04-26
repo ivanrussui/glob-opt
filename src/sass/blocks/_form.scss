@@ -1,0 +1,39 @@
+.form {
+	&__input {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(270px, auto));
+		justify-content: center;
+		column-gap: 10px;
+		input {
+			margin: 67px 0 52px;
+			width: 240px;
+			height: 47px;
+			background-color: #ffffff;
+			border: 1px solid rgba(0, 0, 0, 0.2);
+			border-radius: 25px;
+			padding-left: 27px;
+			opacity: 0.9;
+			font-size: 13px;
+			line-height: 24px;
+			font-weight: 300;
+			color: #101010;
+			&:focus,
+			&:active {
+				outline: 0;
+				border-color: $main-color;
+			}
+		}
+	}
+	// &__btn {
+	// 	position: absolute;
+	// 	padding: 0 10px;
+	// 	bottom: 0%;
+	// 	left: 50%;
+	// 	transform: translate(-50%, 50%);
+	// 	background-color: #fff;
+		// button {
+		// 	display: block;
+		// 	padding: 0 10px;
+		// }
+	// }
+}

@@ -185,7 +185,7 @@
 			}
 		}
 	}
-	.consultation {
+	.form {
 		&__input {
 			grid-template-columns: 270px;
 			// grid-template-rows: repeat(3, 50px);
@@ -195,7 +195,40 @@
 				margin: 0;
 			}
 		}
+		textarea {
+			width: 240px;
+		}
 	}
+	.questions {
+		&__title {
+			padding: 15px 0 5px;
+		}
+		&__subtitle {
+			padding-bottom: 5px;
+		}
+		&__input {
+			margin: 25px 0 20px;
+		}
+		&__btn {
+			padding: 25px 0 30px;
+		}
+		&__form {
+			textarea {
+				height: 85px;
+			}
+		}
+	}
+	// .consultation {
+	// 	&__input {
+	// 		grid-template-columns: 270px;
+	// 		// grid-template-rows: repeat(3, 50px);
+	// 		margin: 70px 0 50px;
+	// 		row-gap: 10px;
+	// 		input {
+	// 			margin: 0;
+	// 		}
+	// 	}
+	// }
 }
 
 @media (max-width: 768px) {
@@ -265,7 +298,7 @@
 	}
 	.price {
 		&__blocks {
-			grid-template-columns: repeat(auto-fit, 265px);
+			grid-template-columns: repeat(auto-fit, 271px);
 			justify-content: center;
 		}
 		&__block {
@@ -280,6 +313,20 @@
 						display: none;
 					}
 				}
+			}
+		}
+	}
+	.consultation {
+		&__form:hover {
+			border-color: $form-color;
+		}
+		&__img {
+			border-color: $main-color;
+			&_origin {
+				display: none;
+			}
+			&_hover {
+				display: block;
 			}
 		}
 	}
@@ -391,16 +438,30 @@
 			line-height: 23px;
 		}
 	}
-	.consultation {
-		padding-bottom: 75px;
+	.form {
 		&__input {
 			grid-template-columns: 240px;
 			input {
 				width: 210px;
 			}
 		}
+		textarea {
+			width: 210px;
+		}
+	}
+	.consultation {
+		padding-bottom: 75px;
+		// &__input {
+		// 	grid-template-columns: 240px;
+		// 	input {
+		// 		width: 210px;
+		// 	}
+		// }
 		&__title {
 			font-size: 24px;
 		}
+	}
+	.questions {
+		padding: 50px 0;
 	}
 }
