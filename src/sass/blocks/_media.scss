@@ -112,6 +112,14 @@
 			justify-content: space-evenly;
 		}
 	}
+	// .schema {
+	// 	// &__blocks {
+	// 	// 	justify-content: space-between;
+	// 	// }
+	// 	&__block {
+	// 		margin-right: 0;
+	// 	}
+	// }
 }
 
 @media (max-width: 992px) {
@@ -328,6 +336,11 @@
 			&_hover {
 				display: block;
 			}
+		}
+	}
+	.schema {
+		&__block {
+			margin: 20px 5px 0;
 		}
 	}
 }
