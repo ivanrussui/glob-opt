@@ -1,0 +1,22 @@
+.managers {
+	padding: 58px 0 76px;
+	background: url('../img/managers/bg.jpg') no-repeat center center / cover;
+	&__img {
+		border: 1px solid #ffffff;
+		border-radius: 50%;
+		max-width: 102px;
+		max-height: 102px;
+		margin: 0 auto;
+		img {
+			padding: 24px 25px 25px 24px;
+		}
+	}
+	&__title {
+		color: #ffffff;
+		text-transform: inherit;
+		margin: 20px 0 18px;
+	}
+	&__subtitle {
+		max-width: 1000px;
+	}
+}
