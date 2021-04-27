@@ -1,0 +1,12 @@
+.schema {
+	padding: 51px 0 46px;
+	&__blocks {
+		display: grid;
+		grid-template-columns: repeat(4, 257px);
+		grid-template-rows: auto;
+		justify-content: center;
+	}
+	&__block {
+		// width: 257px;
+	}
+}
