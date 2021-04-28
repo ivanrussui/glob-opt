@@ -1,0 +1,42 @@
+.reviews {
+	padding: 50px 0 65px;
+	&__slider {
+		padding-top: 30px;
+	}
+	&__image {
+		display: block;
+		margin: 0 auto;
+	}
+	&__chapter {
+		text-align: center;
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 700;
+		color: $descr-color;
+	}
+	&__descr {
+		text-align: center;
+		font-size: 14.1px;
+		font-weight: 300;
+		max-width: 601px;
+		// ниже удали это врем выравнивание
+		margin: 0 auto;
+	}
+	.prev,
+	.next {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 420px;
+		border: none;
+		background-color: #fff;
+		// img {
+		// 	width: 31px;
+		// 	height: 50px;
+		// }
+	}
+	.next {
+		right: 420px;
+		left: auto;
+	}
+}

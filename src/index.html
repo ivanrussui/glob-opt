@@ -42,6 +42,8 @@
 		<meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff"> -->
 
+	<!-- Tiny Slider  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -366,22 +368,22 @@
 		<div class="container">
 			<h2 class="consultation__title title title_fz28">Заказать бесплатную консультацию</h2>
 
-				<form action="#" class="form consultation__form">
-					<div class="img__wrap">
-						<div class="consultation__img">
-							<img src="img/consultation/11.png" alt="consultation" class="consultation__img_origin">
-							<img src="img/consultation/1.png" alt="consultation" class="consultation__img_hover">
-						</div>
+			<form action="#" class="form consultation__form">
+				<div class="img__wrap">
+					<div class="consultation__img">
+						<img src="img/consultation/11.png" alt="consultation" class="consultation__img_origin">
+						<img src="img/consultation/1.png" alt="consultation" class="consultation__img_hover">
 					</div>
-					<div class="form__input consultation__input">
-						<input name="name" required placeholder="Ваше имя..." type="text">
-						<input name="phone" required placeholder="Ваш номер телефона...">
-						<input name="email" required placeholder="Ваш e-mail..." type="email">
-					</div>
-					<div class="form__btn consultation__btn">
-						<button class="btn btn_medium">Отправить заявку</button>
-					</div>
-				</form>
+				</div>
+				<div class="form__input consultation__input">
+					<input name="name" required placeholder="Ваше имя..." type="text">
+					<input name="phone" required placeholder="Ваш номер телефона...">
+					<input name="email" required placeholder="Ваш e-mail..." type="email">
+				</div>
+				<div class="form__btn consultation__btn">
+					<button class="btn btn_medium">Отправить заявку</button>
+				</div>
+			</form>
 
 		</div>
 	</section>
@@ -486,12 +488,54 @@
 		</div>
 	</section>
 
+	<section class="reviews">
+		<div class="container">
+			<h2 class="title title_fz26 reviews__title">отзывы наших клиентов</h2>
+			<div class="divider"></div>
+			<div class="title title_fz21 reviews__subtitle">
+				Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова
+			</div>
+			<div class="reviews__slider">
+				<div>
+					<img src="img/reviews/1.png" alt="reviews" class="reviews__image">
+					<h3 class="reviews__chapter">1Лермонтова Дарья</h3>
+					<p class="reviews__descr">
+						Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ
+						определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, до больших
+						партий детской одежды. Буду продолжать пользоваться услугами даной компании
+					</p>
+				</div>
+				<div>
+					<img src="img/reviews/1.png" alt="reviews" class="reviews__image">
+					<h3 class="reviews__chapter">2Никитина Мария</h3>
+					<p class="reviews__descr">
+						Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ
+						определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, до больших
+						партий детской одежды. Буду продолжать пользоваться услугами даной компании
+					</p>
+				</div>
+				<div>
+					<img src="img/reviews/1.png" alt="reviews" class="reviews__image">
+					<h3 class="reviews__chapter">3Анисимова Ольга</h3>
+					<p class="reviews__descr">
+						Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ
+						определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, до больших
+						партий детской одежды. Буду продолжать пользоваться услугами даной компании
+					</p>
+				</div>
+			</div>
+			<button type="button" class="prev"><img src="img/reviews/left.svg" alt="left"></button>
+			<button type="button" class="next"><img src="img/reviews/right.svg" alt="right"></button>
+
+		</div>
+	</section>
+
 	<section class="questions">
 		<div class="container">
 			<div class="questions__block">
 				<div class="questions__wrap">
 					<h3 class="title questions__title title_fz19">Остались вопросы?</h3>
-					<div class="title questions__subtitle">Напишите нам!</div>	
+					<div class="title questions__subtitle">Напишите нам!</div>
 				</div>
 
 				<form action="#" class="form questions__form">
@@ -509,6 +553,8 @@
 		</div>
 	</section>
 
+	<!-- Подключаем Tiny Slider  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 	<script src="js/script.js"></script>
 </body>
 
