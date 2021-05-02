@@ -1,45 +1,74 @@
 .reviews {
 	padding: 50px 0 65px;
-	&__slider {
-		padding-top: 30px;
-	}
+
 	&__image {
 		display: block;
 		margin: 0 auto;
-		z-index: 111;
-		position: relative;
+		z-index: 11;
+		// position: relative;
+	}
+	&__text {
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
 	}
 	&__chapter {
-		text-align: center;
 		font-size: 18px;
 		line-height: 22px;
 		font-weight: 700;
 		color: $descr-color;
+		margin-bottom: 10px;
 	}
 	&__descr {
-		text-align: center;
 		font-size: 14.1px;
 		font-weight: 300;
-		max-width: 601px;
-		// ниже удали это врем выравнивание
-		margin: 0 auto;
+		line-height: 22px;
+		width: 600px;
+		margin: 0;
 	}
-	.prev,
-	.next {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		left: 420px;
-		border: none;
-		background-color: #fff;
-		// z-index: 0;
-		// img {
-		// 	width: 31px;
-		// 	height: 50px;
-		// }
+
+
+
+	&__slider {
+		padding-top: 30px;
+		.swiper-container {
+			// width: 601px;
+			// max-width: 1430px;
+			// height: 240px;
+			// margin: 0 auto;
+			max-width: calc(1400px + 30px);
+			// padding: 0 15px;
+
+		}
+		.swiper-button-prev {
+			background: url("../img/reviews/left.svg") center center/cover no-repeat;
+			transform: translateX(-50%);
+			top: calc(114px / 2);
+			left: calc(50% - 100px);	
+			
+		}
+	
+		.swiper-button-next {
+			background: url("../img/reviews/right.svg") center center/cover no-repeat;
+			transform: translateX(-50%);
+			top: calc(114px / 2);
+			left: calc(50% + 100px);
+		}
 	}
-	.next {
-		right: 420px;
-		left: auto;
+	.swiper-button-next::after,
+	.swiper-button-prev::after{
+			display: none;
+	}
+	.swiper-slide {
+		transform: scale(.5);
+		opacity: .3;
+		transition: all .3s ease-in;
+	}
+	.swiper-slide-active {
+		transform: scale(1);
+		opacity: 1;
+		transition: all .3s ease-in;
 	}
 }
