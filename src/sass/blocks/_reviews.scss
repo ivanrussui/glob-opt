@@ -1,6 +1,5 @@
 .reviews {
 	padding: 50px 0 65px;
-
 	&__image {
 		display: block;
 		margin: 0 auto;
@@ -27,23 +26,17 @@
 		width: 600px;
 		margin: 0;
 	}
-
-
-
 	&__slider {
 		padding-top: 30px;
 		.swiper-container {
 			max-width: calc(1400px + 30px);
-
 		}
 		.swiper-button-prev {
 			background: url("../img/reviews/left.svg") center center/cover no-repeat;
 			transform: translateX(-50%);
 			top: calc(114px / 2);
 			left: calc(50% - 100px);	
-			
 		}
-	
 		.swiper-button-next {
 			background: url("../img/reviews/right.svg") center center/cover no-repeat;
 			transform: translateX(-50%);

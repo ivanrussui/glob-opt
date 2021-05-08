@@ -25,16 +25,12 @@
 	}
 	&__icons {
 		display: grid;
-		// grid-template-columns: repeat(4, auto);
 		grid-template-columns: repeat(auto-fit, 260px);
-		// grid-template-rows: auto;
-		// grid-auto-rows: 260px;
 		justify-content: space-between;
 		align-items: center;
 	}
 	&__icon {
 		display: grid;
-		// grid-template-rows: minmax(49px, auto);
 		row-gap: 8px;
 		text-align: center;
 		&:nth-child(1) {
@@ -53,7 +49,6 @@
 		line-height: 22px;
 		font-weight: 300;
 		color: #ffffff;
-		// margin-top: 13px;
 	}
 }
 .navbar {
@@ -92,7 +87,6 @@
 
 		&:hover {
 			color: $main-color;
-			// transition: .5s;
 			&:before{
 				opacity: 1;
 				bottom: -3px;
@@ -109,20 +103,6 @@
 			transition: .2s ease-in;
 			opacity: 0;
 		}
-		// &:hover {
-		// 	color: $main-color;
-		// 	transition: .5s;
-		// 	&::before {
-		// 		content: '';
-		// 		position: absolute;
-		// 		height: 1px;
-		// 		bottom: -3px;
-		// 		left: 0;
-		// 		width: 100%;
-		// 		background-color: $main-color;
-		// 		transition: .3s ease-in;
-		// 	}
-		// }
 	}
 	&__info {
 		display: flex;

@@ -14,39 +14,13 @@
 		width: 258px;
 		display: flex;
 		flex-direction: column;
-		// justify-content: center;
 		align-items: center;
-		// margin-right: 33px;
-		// margin-top: 23px;
 		margin: 23px 10px 0;
-		// &:nth-child(4), &:nth-child(7) {
-		// 	margin-right: 0;
-		// }
 	}
-	// &__blocks {
-	// 	display: flex;
-	// 	flex-wrap: wrap;
-	// 	justify-content: center;
-	// 	align-items: baseline;
-
-	// }
-	// &__block {
-	// 	width: 258px;
-	// 	display: flex;
-	// 	flex-direction: column;
-	// 	// justify-content: center;
-	// 	align-items: center;
-	// 	margin-right: 33px;
-	// 	margin-top: 23px;
-	// 	&:nth-child(4), &:nth-child(7) {
-	// 		margin-right: 0;
-	// 	}
-	// }
 	&__text {
 		text-align: center;
 	}
 	&__chapter {
-		// margin: 0;
 		margin: 7px 0 5px;
 		font-size: 16px;
 		line-height: 20px;

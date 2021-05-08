@@ -161,10 +161,8 @@
 		&__blocks {
 			grid-template-columns: 1fr;
 		}
-		// ниже у .advantages добавил стили чтобы сделать иконки не сбоку а сверху
 		&__block {
 			grid-template-columns: 1fr;
-			// grid-template-rows: repeat(2, 100px);
 		}
 		&__img {
 			margin: 0 auto;
@@ -186,14 +184,12 @@
 			img {
 				display: block;
 				margin: 0 auto;
-				// max-width: 80%;
 			}
 		}
 	}
 	.form {
 		&__input {
 			grid-template-columns: 270px;
-			// grid-template-rows: repeat(3, 50px);
 			margin: 70px 0 50px;
 			row-gap: 10px;
 			input {
@@ -226,17 +222,6 @@
 	label.error, .questions label.error {
 		top: 5px;
 	}
-	// .consultation {
-	// 	&__input {
-	// 		grid-template-columns: 270px;
-	// 		// grid-template-rows: repeat(3, 50px);
-	// 		margin: 70px 0 50px;
-	// 		row-gap: 10px;
-	// 		input {
-	// 			margin: 0;
-	// 		}
-	// 	}
-	// }
 }
 
 @media (max-width: 768px) {
@@ -246,10 +231,8 @@
 	.title {
 		&_fz72 {
 			font-size: 48px;
-			// margin-top: 20px;
 		}
 		&_fz42 {
-			// font-size: 48px;
 			display: none;
 		}
 	}
@@ -361,7 +344,6 @@
 			outline: 0;
 		}
 	}
-<<<<<<< HEAD
 	.footer {
 		&__phone {
 			font-size: 17px;
@@ -395,16 +377,12 @@
 			fill: $main-color;
 		}
 	}
-=======
->>>>>>> 6b4197db8c863b98c97a92504753767b90461859
 }
 
 @media (max-width: 576px) {
 	.container {
 		width: 90%;
 		padding: 0 10px;
-		// padding-right: 5px;
-		// padding-left: 5px;
 	}
 	.divider {
 		display: none;
@@ -424,30 +402,14 @@
 		}
 	}
 	.navbar {
-		// &__info {
-		// 	// display: none;
-		// 	// visibility: hidden;
-		// }
 		&__btn {
 			display: none;
 		}
-		// &__text {
-		// 	// display: none;
-		// }
 		&__contacts {
-			// display: none;
 			margin-right: 0;
 			position: relative;
 			top: 20px;
 		}
-		// &__phone {
-		// 	position: relative;
-		// 	top: 20px;
-		// }
-		// &__logo {
-		// 	position: relative;
-		// 	right: 0;
-		// }
 	}
 	.hamburger {
 		left: auto;
@@ -472,15 +434,9 @@
 	}
 
 	.advantages {
-		// &__chapter {
-		// 	line-height: 19px;
-		// }
 		&__blocks {
 			row-gap: 25px;
 		}
-		// &__block {
-		// 	column-gap: 5px;
-		// }
 	}
 	.job {
 		&__blocks {
@@ -489,8 +445,6 @@
 		}
 		&__img {
 			img {
-				// display: block;
-				// margin: 0 auto;
 				max-width: 90%;
 			}
 		}
@@ -519,12 +473,6 @@
 	}
 	.consultation {
 		padding-bottom: 75px;
-		// &__input {
-		// 	grid-template-columns: 240px;
-		// 	input {
-		// 		width: 210px;
-		// 	}
-		// }
 		&__title {
 			font-size: 24px;
 		}
@@ -540,7 +488,6 @@
 		padding: 50px 0;
 	}
 	.footer {
-		// padding-bottom: 30px;
 		&__btn {
 			width: 140px;
 		}
@@ -570,5 +517,3 @@
 		bottom: 37px;
 	}
 }
-
-// header hover
