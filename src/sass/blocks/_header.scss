@@ -2,8 +2,6 @@
 	padding: 23px 0 80px;
 	min-height: 630px;
 	background: url("../img/header/bg.jpg") no-repeat center center / cover;
-	// background: url("../img/header/bg.jpg") no-repeat center top / auto;
-	// background: url("../img/header/bg.jpg") center center / cover no-repeat;
 	&__stripes {
 		display: flex;
 		align-items: center;
@@ -48,6 +46,7 @@
 	}
 	&__img {
 		margin: 0 auto;
+		animation: vol1 1.5s 3 ease-in;
 	}
 	&__descr {
 		font-size: 16px;
@@ -84,16 +83,46 @@
 		}
 	}
 	&__link {
+		position: relative;
 		text-decoration: none;
 		color: #fff;
 		font-size: 15px;
 		line-height: 16px;
 		font-weight: 400;
+
 		&:hover {
 			color: $main-color;
-			text-decoration: underline;
-			transition: .5s;
+			// transition: .5s;
+			&:before{
+				opacity: 1;
+				bottom: -3px;
 		}
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			height: 1px;
+			bottom: 0px;
+			left: 0;
+			width: 100%;
+			background-color: $main-color;
+			transition: .2s ease-in;
+			opacity: 0;
+		}
+		// &:hover {
+		// 	color: $main-color;
+		// 	transition: .5s;
+		// 	&::before {
+		// 		content: '';
+		// 		position: absolute;
+		// 		height: 1px;
+		// 		bottom: -3px;
+		// 		left: 0;
+		// 		width: 100%;
+		// 		background-color: $main-color;
+		// 		transition: .3s ease-in;
+		// 	}
+		// }
 	}
 	&__info {
 		display: flex;
@@ -115,6 +144,10 @@
 		font-weight: 700;
 		color: #ffffff;
 		text-decoration: none;
+		&:hover {
+			color: $main-color;
+			transition: all .4s ease-in;
+		}
 	}
 }
 .menu__close {

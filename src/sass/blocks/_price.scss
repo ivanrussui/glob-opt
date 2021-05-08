@@ -16,14 +16,10 @@
 		&:hover {
 			box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
 			background-color: #e4fce1;
+			animation: vol2 1.5s infinite ease-out;
 			.price__img {
-				// &_origin {
-				// 	display: none;
-				// }
-				// &_hover {
-				// 	display: block;
-				// }
 				@include img-hover;
+				animation: vol3 1.5s infinite ease-in;
 			}
 		}
 	}
@@ -39,15 +35,8 @@
 	}
 	&__img {
 		margin: 14px 0 12px;
-		// &_origin {
-		// 	display: block;
-		// 	margin: 0 auto;
-		// }
-		// &_hover {
-		// 	display: none;
-		// 	margin: 0 auto;
-		// }
 		@include img-origin;
+		
 	}
 	&__day {
 		margin: 0;

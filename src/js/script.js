@@ -1,11 +1,10 @@
 // burger
 const hamburger = document.querySelector('.hamburger'),
   menu = document.querySelector('.menu'),
-  // menu = document.querySelector('.navbar__menu', '.menu__close'),
   menuClose = document.querySelector('.menu__close'),
   bodyLock = document.querySelector('body');
 
-hamburger.addEventListener('click', ()	=> {
+hamburger.addEventListener('click', () => {
   menu.classList.add('active');
   bodyLock.classList.add('lock');
 });
@@ -15,75 +14,114 @@ menuClose.addEventListener('click', () => {
   bodyLock.classList.remove('lock');
 });
 
-// Tiny Slider
-const slider = tns({
-  container: '.reviews__slider',
-  items: 1,
-  slideBy: 'page',
-  controls: false,
-  autoplay: false,
-  autoplayHoverPause: true,
-  autoplayButtonOutput: false,
-  navPosition: 'bottom',
-  speed: 600,
-  responsive: {
-    320: {
-      nav: true,
-    },
-    768: {
-      nav: false,
+// внутри бургера при переходе по ссылкам на стр закрытие бургера
+let navbarLink = document.querySelectorAll('.navbar__link');
+
+for (let i = 0; i < navbarLink.length; i++) {
+  navbarLink[i].addEventListener('click', function () {
+    menu.classList.remove('active');
+    bodyLock.classList.remove('lock');
+  });
+}
+
+// Swiper
+const swiper = new Swiper('.swiper-container', {
+  loop: true,
+  slidesPerView: 1,
+  centeredSlides: true,
+  spaceBetween: 130,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
     },
   },
 });
 
-// переключение кнопок в слайдере
-document.querySelector('.prev').addEventListener('click', function () {
-	slider.goTo('prev');
+$(document).ready(function () {
+  // modal
+  $('[data-modal=consultation]').on('click', function () {
+    $('.overlay, #consultation').fadeIn('slow');
+  });
+  $('.modal__close').on('click', function () {
+    $('.overlay, #consultation, #thanks').fadeOut(450);
+  });
+
+  // Validate
+  function validateForms(form) {
+    $(form).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2,
+        },
+        phone: 'required',
+        email: {
+          required: true,
+          email: true,
+        },
+      },
+      messages: {
+        name: {
+          required: 'Пожалуйста, введите имя',
+          minlength: jQuery.validator.format('Введите более {0} букв!'),
+        },
+        phone: 'Пожалуйста, введите телефон',
+        email: {
+          required: 'Пожалуйста, введите почту',
+          email: 'Неправильно введен адрес почты',
+        },
+      },
+    });
+  }
+
+  validateForms('.consultation__form');
+  validateForms('.questions__form');
+  validateForms('.modal__form');
+
+  // Masked Input
+  $('input[name=phone').mask('+7 (999) 999-9999');
+
+  // Ajax
+  $('form').submit(function (e) {
+    e.preventDefault();
+
+    if (!$(this).valid()) {
+      return;
+    }
+
+    $.ajax({
+      type: 'POST',
+      url: 'mailer/smart.php',
+      data: $(this).serialize(),
+    }).done(function () {
+      $(this).find('input').val('');
+      $('#consultation').fadeOut('slow');
+      $('.overlay, #thanks').fadeIn('750');
+
+      $('form').trigger('reset');
+    });
+    return false;
+  });
+
+	$(window).scroll(function () {
+    if ($(this).scrollTop() > 800) {
+      $('.pageup').fadeIn();
+    } else {
+      $('.pageup').fadeOut();
+    }
+  });
+
+  // плавность перехода по всем ссылкам на сайте
+  $("a[href^='#']").click(function () {
+    const _href = $(this).attr('href');
+    $('html, body').animate({ scrollTop: $(_href).offset().top + 'px' });
+    return false;
+  });
 });
-document.querySelector('.next').addEventListener('click', function () {
-	slider.goTo('next');
-});
-
-
-// img hover
-// let priceBlock = document.querySelector('.price__block'),
-//   imgOrigin = document.querySelector('.price__img_origin'),
-//   imgHover = document.querySelector('.price__img_hover'),
-//   priceImg = document.querySelectorAll('.price__img');
-
-// console.log(priceBlock);
-
-// for (let i = 0; i < priceBlock.length; i++) {
-// 	priceBlock[i].addEventListener('mouseenter', function () {
-// 		imgOrigin.style.display = 'none';
-// 		imgHover.style.display = 'block';
-//   });
-// }
-
-// for (let i = 0; i < priceBlock.length; i++) {
-//   priceBlock[i].addEventListener('mouseleave', function () {
-// 		imgOrigin.style.display = 'block';
-// 		imgHover.style.display = 'none';
-//   });
-// }
-// for (let i = 0; i < priceBlock.length; i++) {
-//   priceBlock[i].addEventListener('mouseenter', function () {
-//     imgOrigin.style.display = 'none';
-//     imgHover.style.display = 'block';
-//   });
-// }
-// for (let i = 0; i < priceBlock.length; i++) {
-//   priceBlock[i].addEventListener('mouseleave', function () {
-//     imgOrigin.style.display = 'block';
-//     imgHover.style.display = 'none';
-//   });
-// }
-
-// priceBlock.addEventListener('mouseenter', () => {
-// 	imgOrigin.style.display = 'none';
-// 	imgHover.style.display = 'block';
-// });
-// priceBlock.addEventListener('mouseleave', () => {
-// 	imgOrigin.style.display = 'block';
-// 	imgHover.style.display = 'none';
-// });

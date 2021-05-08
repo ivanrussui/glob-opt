@@ -4,7 +4,17 @@
 		grid-template-columns: repeat(3, minmax(270px, auto));
 		justify-content: center;
 		column-gap: 10px;
+		// display: flex;
+		// grid-template-columns: repeat(3, minmax(270px, auto));
+		// justify-content: center;
+		// column-gap: 10px;
+		.wrap {
+			display: flex;
+			flex-direction: column;
+		}
+		}
 		input {
+			display: block;
 			margin: 67px 0 52px;
 			width: 240px;
 			height: 47px;
@@ -36,4 +46,9 @@
 		// 	padding: 0 10px;
 		// }
 	// }
+	label.error {
+		position: relative;
+		top: -40px;
+		text-align: center;
+		color: $main-color;
 }

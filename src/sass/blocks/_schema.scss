@@ -59,4 +59,7 @@
 		font-weight: 300;
 		color: $descr-color;
 	}
+	&__img img {
+		animation: vol5 1.6s infinite ease-in-out;
+	}
 }

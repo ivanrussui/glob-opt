@@ -112,14 +112,11 @@
 			justify-content: space-evenly;
 		}
 	}
-	// .schema {
-	// 	// &__blocks {
-	// 	// 	justify-content: space-between;
-	// 	// }
-	// 	&__block {
-	// 		margin-right: 0;
-	// 	}
-	// }
+	.footer {
+		&__chapter {
+			display: none;
+		}
+	}
 }
 
 @media (max-width: 992px) {
@@ -226,6 +223,9 @@
 			}
 		}
 	}
+	label.error, .questions label.error {
+		top: 5px;
+	}
 	// .consultation {
 	// 	&__input {
 	// 		grid-template-columns: 270px;
@@ -287,6 +287,9 @@
 			&:hover {
 				color: #fff;
 				text-decoration: none;
+				&::before {
+					opacity: 0;
+				}
 			}
 		}
 		&__logo img {
@@ -294,6 +297,9 @@
 		}
 		&__phone {
 			font-size: 17px;
+			&:hover {
+				color: #fff;
+			}
 		}
 	}
 	.header {
@@ -313,7 +319,9 @@
 			&:hover {
 				box-shadow: none;
 				background-color: #fff;
+				animation: none;
 				.price__img {
+					animation: none;
 					&_origin {
 						display: block;
 					}
@@ -323,6 +331,7 @@
 				}
 			}
 		}
+
 	}
 	.consultation {
 		&__form:hover {
@@ -341,6 +350,48 @@
 	.schema {
 		&__block {
 			margin: 20px 5px 0;
+		}
+	}
+	.reviews {
+		&__descr {
+			max-width: 90%;
+		}
+		.swiper-button-next,
+		.swiper-button-prev:focus {
+			outline: 0;
+		}
+	}
+	.footer {
+		&__phone {
+			font-size: 17px;
+			&:hover {
+				color: #fff;
+			}
+		}
+		&__policy {
+			a {
+				&:hover {
+					&::before {
+						opacity: 1;
+						bottom: 0px;
+					}
+				}
+			}
+		}
+		&__create {
+			a {
+				&:hover {
+					&::before {
+						opacity: 1;
+						bottom: 0;
+					}
+				}
+			}
+		}
+	}
+	.pageup {
+		&:hover svg path {
+			fill: $main-color;
 		}
 	}
 }
@@ -444,7 +495,8 @@
 			margin: 10px 0 5px;
 		}
 	}
-	.agent, .managers {
+	.agent,
+	.managers {
 		padding: 50px 0;
 		&__subtitle {
 			font-size: 16px;
@@ -474,7 +526,46 @@
 			font-size: 24px;
 		}
 	}
+	.reviews {
+		padding-bottom: 50px;
+		&__title {
+			margin-bottom: 0;
+		}
+	}
+
 	.questions {
 		padding: 50px 0;
 	}
+	.footer {
+		// padding-bottom: 30px;
+		&__btn {
+			width: 140px;
+		}
+		&__contacts {
+			display: none;
+		}
+		&__up {
+			padding: 0 5px 15px;
+		}
+		&__down {
+			padding-top: 20px;
+			flex-direction: column;
+			text-align: center;
+		}
+		&__policy {
+			order: 1;
+		}
+		&__create {
+			order: 2;
+		}
+		&__year {
+			order: 3;
+		}
+	}
+	.pageup {
+		right: 10px;
+		bottom: 37px;
+	}
 }
+
+// header hover
