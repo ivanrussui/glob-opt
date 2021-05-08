@@ -14,6 +14,7 @@ menuClose.addEventListener('click', () => {
   bodyLock.classList.remove('lock');
 });
 
+<<<<<<< HEAD
 // внутри бургера при переходе по ссылкам на стр закрытие бургера
 let navbarLink = document.querySelectorAll('.navbar__link');
 
@@ -24,26 +25,36 @@ for (let i = 0; i < navbarLink.length; i++) {
   });
 }
 
+=======
+>>>>>>> 6b4197db8c863b98c97a92504753767b90461859
 // Swiper
 const swiper = new Swiper('.swiper-container', {
   loop: true,
   slidesPerView: 1,
+<<<<<<< HEAD
   centeredSlides: true,
   spaceBetween: 130,
+=======
+	centeredSlides: true,
+	spaceBetween: 130,
+>>>>>>> 6b4197db8c863b98c97a92504753767b90461859
 
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+<<<<<<< HEAD
   },
 
   breakpoints: {
     1200: {
       slidesPerView: 3,
     },
+=======
+>>>>>>> 6b4197db8c863b98c97a92504753767b90461859
   },
-});
 
+<<<<<<< HEAD
 $(document).ready(function () {
   // modal
   $('[data-modal=consultation]').on('click', function () {
@@ -124,4 +135,11 @@ $(document).ready(function () {
     $('html, body').animate({ scrollTop: $(_href).offset().top + 'px' });
     return false;
   });
+=======
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+>>>>>>> 6b4197db8c863b98c97a92504753767b90461859
 });
