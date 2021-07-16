@@ -2,7 +2,10 @@
 const hamburger = document.querySelector('.hamburger'),
   menu = document.querySelector('.menu'),
   menuClose = document.querySelector('.menu__close'),
-  bodyLock = document.querySelector('body');
+  bodyLock = document.querySelector('body'),
+	modal = document.querySelector('#consultation');
+
+modal.style.border = '5px solid #ec644b';
 
 hamburger.addEventListener('click', () => {
   menu.classList.add('active');

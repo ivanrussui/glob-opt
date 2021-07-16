@@ -219,7 +219,8 @@
 			}
 		}
 	}
-	label.error, .questions label.error {
+	label.error,
+	.questions label.error {
 		top: 5px;
 	}
 }
@@ -314,7 +315,6 @@
 				}
 			}
 		}
-
 	}
 	.consultation {
 		&__form:hover {
@@ -515,5 +515,31 @@
 	.pageup {
 		right: 10px;
 		bottom: 37px;
+	}
+}
+
+@media (min-width: 500px) {
+	.modal {
+		&__close {
+			border-radius: 5px;
+			top: -5px;
+			right: -54px;
+			border: 2px solid $main-color;
+			padding: 0;
+			font-size: 50px;
+			width: 40px;
+			height: 40px;
+			line-height: 37px;
+			text-align: center;
+		}
+	}
+}
+
+@media (min-width: 769px) {
+	.modal {
+		&__close:hover {
+			transition: .5s all;
+			background-color: $hover-color;
+		}
 	}
 }
