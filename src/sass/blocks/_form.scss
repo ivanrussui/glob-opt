@@ -10,6 +10,7 @@
 		}
 		}
 		input {
+			outline: 1px solid #101010;
 			display: block;
 			margin: 67px 0 52px;
 			width: 240px;
@@ -23,11 +24,11 @@
 			line-height: 24px;
 			font-weight: 300;
 			color: #101010;
-			&:focus,
-			&:active {
-				outline: 0;
-				border-color: $main-color;
-			}
+			// &:focus,
+			// &:active {
+				// outline: 0;
+				// border-color: $main-color;
+			// }
 		}
 	}
 	label.error {
