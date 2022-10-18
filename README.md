@@ -1,1 +1,3 @@
-# glopt
+# glo-opt
+# npm i
+# gulp
