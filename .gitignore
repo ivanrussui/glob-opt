@@ -1,7 +1,8 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
-# папку css в src удали это для работы так как там Gulp не устанавливается
-/src/css
+# IDE
+.idea
+.vscode
 
 # заметь в файле инфо, важные замечанию по проекту
 info.txt
@@ -10,7 +11,7 @@ info.txt
 Roboto.zip
 RobotoCondensed.zip
 
-# phpmailer чтобы с твоими данными почты не уходил на гитхаб
+# phpmailer содержит личные данные почты
 /src/mailer
 /dist/mailer
 

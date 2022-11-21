@@ -35,14 +35,14 @@
 		visibility: hidden;
 		opacity: 0;
 		transition: all 0.7s;
-	}
-	&.active {
-		top: 0px;
-		visibility: visible;
-		opacity: 0.97;
-		background-color: $title-color;
-		display: flex;
-		justify-content: space-between;
+    &.active {
+      top: 0;
+      visibility: visible;
+      opacity: 0.97;
+      background-color: $title-color;
+      display: flex;
+      justify-content: space-between;
+    }
 	}
 	.navbar {
 		&__menu {
